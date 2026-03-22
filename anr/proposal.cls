@@ -219,7 +219,7 @@
     % uses biblatex (instead of bibtex)
 {biblatex}
 % font size of the bibliographical section text
-\renewcommand*{\bibfont}{\footnotesize}
+\renewcommand*{\bibfont}{\scriptsize}
 
 % Get the reference numbered colored and with square bracket
 \DeclareFieldFormat{labelnumberwidth}{\textcolor{citecolor}{\mkbibbrackets{#1}}}
@@ -261,7 +261,7 @@
 
 % Make the DOI start on a new line
 \DeclareFieldFormat{doi}{%
-  \newline
+%  \newline
   \mkbibacro{DOI}\addcolon\space
     \ifhyperref
       {\href{http://dx.doi.org/#1}{\nolinkurl{#1}}}

@@ -1,0 +1,554 @@
+\section*{Proposal overview}
+
+The goal of  \projacro\ is to investigate the accelerated nature of the expansion of our Universe 
+by producing robust cosmological measurements with state-of-the-art observations. 
+We aim at measuring the growth rate of structures, quantity that can probe dark energy 
+models and deviations from general relativity on cosmic scales. 
+
+The team will use galaxy and supernova datasets from 
+the Dark Energy Spectroscopic Instrument (DESI) and 
+the Zwicky Transient Facility (ZTF), producing the best density and 
+peculiar velocity fields in the Northern sky. 
+
+\projacro\ is divided in three major components:
+\begin{enumerate}
+  \item \textbf{Simulations:} producing large samples of sythetic versions of DESI and ZTF surveys; 
+  \item \textbf{Systematics:} quantifying the impact of observational systematics in real 
+  and synthetic datasets;
+  \item \textbf{Cosmology:} obtaining cosmological constraints on dark energy and 
+  modified gravity theories. 
+\end{enumerate} 
+
+The optimal and unique combination of DESI densities and DESI+ZTF velocities 
+is expected to yield 8.3\% precision on the growth rate at late cosmic times. 
+Combined with other growth rate measurements, \projacro's results have the potential 
+to reduce uncertainties on the gravitional index $\gamma$ by a factor of two. 
+
+Our local team has the required expertise and has acquired international recognition 
+in this field over recent years, and will work hand-in-hand with experts from DESI and ZTF collaborations.
+
+The success of \projacro\ will critically depend on the workforce in our team
+required to merge efforts across datasets and collaborations. 
+Therefore we request funds to hire one PhD student and one 
+experienced postdoctoral researcher to achieve the objectives of \projacro.
+
+\small
+\begin{center}
+  \textbf{\projacro's team members \\ \ \\}
+
+\begin{tblr}{
+    width=\linewidth,
+    colspec={%X[l,valign=m,wd=1.cm]
+             X[l,valign=m,wd=2cm]
+             X[l,valign=m,wd=2cm]
+             X[l,valign=m,wd=2.cm]
+             X[l,valign=m]
+             X[r,valign=m,wd=3cm]},
+    row{1}={font=\bfseries},
+     hline{3,4,5,6,7,8,9,10, 11} = {solid,gray}
+}
+\hline
+\hline 
+
+Last Name &
+First name &
+Current position &
+Role and responsibilities in the project &
+{Involvement\\(person.month)} \\
+
+\hline
+\hline
+
+Bautista &
+Julian &
+Professor &
+{Coordinator \\ \;\; All tasks}&
+43.2 \\
+
+Fouchez &
+Dominique &
+Researcher &
+{Work package N\\ \;\; Provide x and y}&
+4.8 \\
+
+
+Racine &
+Benjamin &
+Researcher &
+{Work package N\\ \;\; Provide x and y}&
+4.8 \\
+
+
+Feinstein &
+Fabrice &
+Professor &
+{Work package N\\ \;\; Provide x and y}&
+19.2 \\
+
+
+Mena-Fernandez &
+Juan &
+Postdoc &
+{Work package N\\ \;\; Provide x and y}&
+14.4 \\
+
+Hanser &
+Corentin &
+Postdoc &
+{Work package N\\ \;\; Provide x and y}&
+14.4 \\
+
+Kebadian &
+Rafael &
+PhD student &
+{Work package N\\ \;\; Provide x and y}&
+14.4 \\
+
+\SetCell [c=2]{l} \textbf{To be recruited} &
+ &
+PhD student &
+{Work package 1 \\
+    \;\; Blabla \\
+ Work package 2 \\
+    \;\; Blabla}&
+36 \\
+
+\SetCell [c=2]{l} \textbf{To be recruited} &
+ &
+Postdoctoral researcher &
+{Work package 1 \\
+    \;\; Blabla \\
+ Work package 2 \\
+    \;\; Blabla}&
+36 \\
+
+\end{tblr}
+\end{center}
+\normalsize
+
+\newpage
+
+\section{Proposal's context, positioning and objective(s)}
+
+%\emph{This paragraph refers to the evaluation criterion ``Quality and scientific aim''. }
+
+%\emph{The criterion « Quality and scientific ambition» will be the determining one: only the 
+%projects having received an « A » will proceed to the second step of the evaluation process}
+
+%blabla with\supercite{Dumur2015} and also Ref.~\cite{Dumur2021}
+
+
+
+\subsection{Objectives and research hypotheses}
+ 
+
+The accelerated nature of the expansion of our Universe remains one of the most 
+mysterious puzzles in Physics, %\cite{riessObservationalEvidenceSupernovae1998,perlmutterMeasurementsOmegaLambda1999}, 
+well consolidated by several recent and 
+independent cosmological observations 
+\cite{planckcollaborationPlanck2018Results2020,
+broutPantheonAnalysisCosmological2022,
+rubinUnionUNITYCosmology2025,
+descollaborationDarkEnergySurvey2024,
+desicollaborationDESIDR2Results2025}.
+Explanations for such an acceleration require Physics beyond our standard model 
+and/or ambitious modifications of our current theory of gravity: 
+general relativity.
+
+
+One of the potential solutions is to introduce a new exotic component of our Universe:
+ \textbf{dark energy}. 
+Dark energy has negative relativistic pressure, therefore acting as 
+a source of anti-gravity, repelling galaxies on large cosmic scales. 
+The simplest form of dark energy is equivalent to Einstein's cosmological constant $\Lambda$. 
+The cosmological constant corresponds to a fluid with an equation of state  $w = -1$ 
+(relation between relativistic pressure and energy density), constant with time.  
+Current observations require that at least 68\% of our Universe's energy budget is 
+in form of dark energy. Such a model is dubbed $\Lambda$CDM, where CDM stands 
+for cold dark matter.
+More exotic dark energy models predict different values for $w$, with the only constrain 
+that $w < -1/3$ to produce an accelerated expansion.  
+A generalised model considers the equation of state of dark energy to be 
+an time-evolving quantity
+\cite{chevallierAcceleratingUniversesScaling2001,linderExploringExpansionHistory2003}, 
+which can be written as $w(a) = w_0 + w_a(1-a)$, where $a$ is the scale factor 
+of the Universe 
+($a=1$ today and $a=0$ at the Big Bang) and $w_0, w_a$ two fixed parameters.
+Such a model is referred to as $w_0w_a$CDM.  
+In 2024, a combination of several cosmological measurements (see below) 
+showed strong preference for an $w_0w_a$CDM Universe over a $\Lambda$CDM one by  
+more than 3$\sigma$  
+\cite{desicollaborationDESIDR2Results2025}, showing hints of new Physics 
+for the first time since the discovery of the acceleration in the 2000's. 
+
+An alternative solution to explain the accelerated expansion of the Universe 
+is to propose alternatives to general relativity (GR) to describe gravity on large cosmic 
+scales. Those are referred to as \textbf{modified gravity theories}. 
+Modified gravity effects have to manifest only on cosmic scales where 
+the expansion is observed, 
+since GR is compatible with extremely high-precision measurements made on Earth 
+\cite{poundEffectGravityNuclear1964,
+hafeleAroundtheWorldAtomicClocks1972,
+hafeleAroundtheWorldAtomicClocks1972a,
+vessotTestRelativisticGravitation1980,
+kapnerTestsGravitationalInverseSquare2007}
+in the Solar System 
+\cite{shapiroFourthTestGeneral1971,
+titovDeflectionLightInduced2015}, 
+on stars 
+\cite{joyceGravitationalRedshiftSirius2018,
+gravitycollaborationDetectionGravitationalRedshift2018}, 
+on binary and triple systems of pulsars
+\cite{taylorNewTestGeneral1982,
+stairsTestingGeneralRelativity2003,
+kramerTestsGeneralRelativity2006,
+voisinImprovedTestStrong2020}, 
+as well as 
+in mergers of black holes and neutron stars 
+\cite{theligoscientificcollaborationObservationGravitationalWaves2016,
+theligoscientificcollaborationGW170817ObservationGravitational2017}. 
+Direct imaging of black holes also are consistent
+with GR, in a very strong field regime 
+\cite{eventhorizontelescopecollaborationFirstM87Event2019}.
+There are several families of models trying to extend or modify GR 
+to account for 
+the observed acceleration of the Universe 
+\cite{cliftonModifiedGravityCosmology2012,
+zhaiClusteringLuminousRed2017,
+ezquiagaDarkEnergyLight2018,
+ferreiraCosmologicalTestsGravity2019,
+houCosmologicalProbesStructure2023}.
+However, such models predict the same \textit{expansion history} as dark energy, 
+so we need an alternative observable to discriminate between dark energy and 
+modified gravity models. One of the best observables is 
+the \textit{growth history} of 
+the cosmic density field of the Universe
+and its impact on its velocity field. 
+
+
+The expansion rate of the Universe $H(z)$ and \textbf{the growth rate of the structures} $f(z)$, 
+both functions of cosmic time or redshift $z$, 
+are two important observables that jointly allow us to constrain and distinguish 
+between dark energy or modified gravity models
+\cite{houCosmologicalProbesStructure2023,hutererGrowthCosmicStructure2023}.
+
+The expansion rate of the Universe, $H(z)$, as a function of time or redshift $z$, 
+has been historically been measured via the average distance-redshift relationship 
+of extragalactic objects. 
+Redshifts are precisely measured with spectroscopy, but distances are  
+a more challenging endeavour. 
+Several distance indicators have been used
+in recent years: 
+the Tully-Fisher (TF, \cite{tullyNewMethodDetermining1977}) 
+and Fundamental Plane (FP, \cite{djorgovskiFundamentalPropertiesElliptical1987}) 
+relations, as well as 
+type-Ia supernovae (SNIa, \cite{kowalAbsoluteMagnitudesSupernovae1968}). 
+The first two indicators (TF and FP) rely on empirical relations between galaxy properties 
+and their luminosity or size, so in principle they can be applied larg samples of galaxies. 
+However those relations have a large intrinsic scatter of about 20-30\% in distances 
+compared to SNIa (5-10\%). SNIa are better distance indicators but are rarer events.
+The discovery of the accelerated expansion in the 2000's used samples of tens of SNIa
+\cite{riessObservationalEvidenceSupernovae1998,perlmutterMeasurementsOmegaLambda1999}
+while today's samples reach several thousands (see below).
+%Measurements of today's expansion rate, $H_0$, from late time probes are currently 
+%in strong tension ($> 5\sigma$) with early time probes. 
+\textbf{\projacro\ will employ state-of-the-art samples of 
+distance indicators to constrain models of dark energy and modified gravity.}
+
+%\textbf{The main goal of \projacro\ is to produce robust measurements of the growth rate of structures
+%at late cosmic times (when acceleration is taking place) by using state-of-the-art 
+%observations of our Universe.}
+%While modified gravity theories predict the same expansion rate as dark energy, 
+%its signature consists in predicting a different growth rate than dark energy. 
+%The growth rate can be expressed 
+%as $f(z) = [\Omega_m(z)]^\gamma$, where $\Omega_m(z)$ 
+%is the fraction of matter in the Universe and $\gamma$ is the growth index.%\cite{linderParameterizedBeyondEinsteinGrowth2007}. 
+%In GR, the growth index $\gamma=0.55$, while in modified gravity theories it takes 
+%different values. 
+%\textbf{\projacro\ will constrain the dark energy equation of state as well as potential deviations 
+%from general relativity by measuring the growth rate of structures.}
+
+\begin{figure}[t]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/cosmopv.png}
+  \caption{Schematic view of the \projacro. 
+  We will use state-of-the-art samples of galaxy redshifts and 
+  distance indicators to measure both the distorted density field 
+  and the radial peculiar velocity field to derive better constraints on 
+  the growth rate of structures, dark energy and modified gravity theories.}
+  \label{fig:cosmopv}
+\end{figure}
+
+The growth rate of structures $f(z)$ quantifies how fast initial perturbations of the 
+cosmic density field, $\delta(\vec{x})$, grow with time or redshift $z$. 
+The r.m.s. of the cosmic density field smoothed on scales of 8\hmpc\ noted 
+$\sigma_8(z)$ also 
+quantifies structure growth versus time. 
+The product $f(z) \sigma_8(z)$ can be measured via the impact of 
+\emph{peculiar velocities} of galaxies on the observed structures. 
+Peculiar velocities are simply due to the motions of galaxues 
+due to gravitational attraction from dense structures, therefore those 
+velocities are an important laboratory to test gravity on cosmic scales. 
+Peculiar velocities (PV) modify redshifts due to the cosmic expansion. 
+Both are generally undistiguishable, creating distortions in the 
+observed galaxy density field, known as \emph{redshift-space distortions} (RSD). 
+The two-point statistics of the galaxy density field, $\langle \delta(\vec{x}) \delta(\vec{y})\rangle$, 
+becomes anisotropic w.r.t. the line-of-sight, allowing measurements of the growth rate $f(z)$ 
+with spectroscopic galaxy surveys 
+\cite{alamClusteringGalaxiesCompleted2017,
+alamCompletedSDSSIVExtended2021,
+desicollaborationDESI2024FullShape2025}.
+Moreover, if distance indicators are available for a large sample of galaxies,
+it is possible to break the degeneracy between velocity due to cosmic expansion and  
+velocity due to proper motion. 
+Measuring the velocity field $v(\vec{x})$ brings extra information 
+than just the distorted galaxy density field $\delta(\vec{x})$. 
+The two-point statistics of the velocity field, 
+$\langle v(\vec{x}) v(\vec{y})\rangle$, also depends on $f(z)\sigma_8(z)$.
+Measuring three combinations of two-point functions, i.e., 
+density-density, velocity-velocity and their cross correlation
+ $\langle \delta(\vec{x}) v(\vec{y})\rangle$,
+yield tighter constraints than just one of such statistics 
+\cite{qinRedshiftspaceMomentumPower2019,
+%adamsJointGrowthrateMeasurements2020,
+%saidJointAnalysis6dFGS2020,
+turnerLocalMeasurementGrowth2023,
+boubelLargescaleMotionsGrowth2024,
+qinRedshiftspaceMomentumPower2025}.
+Figure~\ref{fig:cosmopv} shows a schematic view of such a combination. 
+\textbf{\projacro\ will employ state-of-the-art samples of distance indicators (FP, TF, and SNIa)
+to measure peculiar velocities and obtain the tightest constraints on the growth rate at late times.} 
+
+
+
+
+\subsection{Position of the project in relation to the state of the art}
+
+%Given the high-quality and large statistical 
+%power of such datasets, it is essential to develop precise and accurate methodologies 
+%as well as careful tests and quantification of systematic uncertainties. 
+The \projacro\ team has more than five years of expertise in this field and it is currently
+well established as leads in key cosmological analyses with peculiar velocities, 
+including surveys such as:
+\begin{itemize}
+  \item \textbf{the Dark Energy Spectroscopic Instrument (DESI):} 
+  currently the best spectroscopic survey of galaxies to date, it will measure 
+  63 million galaxy redshifts after eight years of observations (2021-2028) over 17,000~deg$^2$
+  \cite{desicollaborationOverviewInstrumentationDark2022}.
+  DESI galaxies are an excellent tracer of the distorted density field, 
+  from which we can measure anisotropies due to RSD. 
+  The DESI Peculiar Velocity survey will produce distance measurements to 
+  53k spiral galaxies from the Tully-Fisher relation and 133k ellipticals 
+  from the Fundamental Plane \cite{saulderTargetSelectionDESI2023},%,,saidDESIPeculiarVelocity2024,douglassDESIEDRCalibrating2025}.
+  Those distances will yield a well sampled velocity field at $z<0.1$.
+  
+  \item \textbf{the Zwicky Transient Facility (ZTF):} 
+  a photometric survey with large field of view and high cadence, ideal for the 
+  discovery of transient events, including SNIa \cite{bellmZwickyTransientFacility2019}%,rigaultZTFSNIa2025}.
+  Covering more than 17k~$deg^2$ of the Northen sky, perfectly overlapping with DESI
+  observations, ZTF will discover more than 30k SNIa over redshifts $0 < z < 0.2$. 
+  which will be used to obtain precise peculiar velocities.
+\end{itemize}
+\projacro\ will focus in the DESI and ZTF overlap, a perfect opportunity for cross-correlations and systematic cross-checks. 
+Based on our own Fisher forecasts \cite{carreresGrowthrateMeasurementTypeIa2023,ravouxGeneralizedFrameworkLikelihoodbased2025}, 
+\textbf{\projacro\ will produce a 8.3\% precision growth rate measurement when combining DESI galaxies and DESI+ZTF velocities 
+(Figure~\ref{fig:fs8}), representing the most precise and robust estimate at late cosmic times. }
+
+\begin{figure}[t]%{r}{0.6\textwidth}  
+ \centering
+  \includegraphics[width=0.7\textwidth]{figures/fs8_theory_sdss_desiy1_desi_pv_ztf_ztfdesi_english.pdf}
+  \caption{Growth rate of structures versus redshift from past measurements compared to expected results from  \projacro, which will 
+  employ low-redshift galaxies and peculiar velocities from the Dark Energy Spectroscopic Instrument (DESI) and the Zwicky Transient Facility (ZTF).}
+  \label{fig:fs8}
+\end{figure}
+
+Producing large samples of synthetic datasets reproducing real 
+data at high fidelity is an essential ingredient.
+Those sets have multiple uses: testing our methodologies for biases,
+understand our uncertainties, compute covariance matrices of observables, 
+and study the impact of systematic effects on cosmological results. 
+Building up on current experience in our team 
+\cite{bautistaMockQuasarLymanalphaForest2015,
+zhaoCompletedSDSSIVExtended2021,
+qinCosmicFlowMeasurement2021,
+carreresGrowthrateMeasurementTypeIa2023,
+rosselliForecastGrowthrateMeasurement2025a,  
+DESIPV_Bautista},
+\textbf{\projacro\ will lead the production of the most realistic 
+synthetic datasets for both DESI and ZTF.} 
+
+
+
+
+\subsection{Methodology and risk management}
+
+
+\begin{footnotesize}
+Describe precisely the methodology and its relevance to reach the objectives; 
+detail the scientific risks and fallback solutions envisaged; 
+describe the scientific program and justify the breakdown of 
+the work program into tasks in line with the objectives pursued.
+
+\begin{itemize}
+  \item For each task, describe the objectives, the work programme, deliverables, 
+  contributions of the partners, methods and technical choices, risks and fallback
+   solutions (among other examples: difficulty to access study site, lack of 
+   preliminary data, delay in obtaining approval from the ethics committee, etc.). 
+   Illustrate with a Gantt chart.
+	\item Justify the relevance of the methodology in terms of ethics, scientific 
+  integrity and social responsibility of sciences - and as such, considering or 
+  not the sex and/or gender aspect , considering the ecological sustainability in the implementation of the project -, and in terms of disciplinary coverage (mono- trans- and inter-disciplinarity). 
+	\item If applicable, indicate the conditions of access to a research 
+  infrastructure IR, IR* or OSI
+\end{itemize} 
+\end{footnotesize} 
+
+\ 
+
+
+%Methodology to reach the scientific objectives of the project, 
+% detailed description of the intended method(s) including its disciplinary 
+% coverage (mono-trans-inter-disciplinary)
+
+\projacro\ is organised in three connected work packages: synthetic datasets, 
+systematic effects in real data, and cosmological implications of our results.
+
+\subsubsection*{Work package 1: Synthetic datasets}
+
+WP1 will focus on the production and analyses of realistic synthetic datasets 
+reproducing properties of real data from DESI and ZTF. 
+
+\begin{itemize}
+  \item \textbf{Fast approximate simulations}
+    Recent mock catalogs used for peculiar velocities are based on n-body simulations 
+    such as AbacusSummit \cite{DESIPV_Bautista}%maksimovaABACUSSUMMITMassiveSet2021,DESIPV_Bautista}
+    or Uchuu \cite{ishiyamaUchuuSimulationsData2021}, 
+    which are high accuracy but are limited in volume or in the number of independent realisations.
+    Using well-known techniques \cite{chuangEZmocksExtendingZel2015,zhaoCompletedSDSSIVExtended2021},
+    we will  
+    produce a large number ($O(1000)$) of independent realisations of density and velocity fields at low redshift. 
+  
+  \item \textbf{Production of synthetic DESI Peculiar velocity surveys and ZTF SNIa samples:} 
+    We will add survey-like properties to the simulations above to create sythetic samples of DESI and ZTF surveys,
+    including distance indicators.  
+    %An important aspect of those mock catalogues is the fact that they originate from the same base simulations, 
+    %so they include the cross-correlations between surveys. 
+    For DESI, we will use existing infrastructure used to produce DESI Data Release 1 mock catalogues for TF and FP samples 
+    \cite{DESIPV_Bautista}
+    while for ZTF, we will build upon in-house experience \cite{carreresGrowthrateMeasurementTypeIa2023} 
+    and use existing software (\textsc{skysurvey}) from the collaboration.  
+    Those new mock catalogues will reach higher redshifts than current sets, 
+    and will include subtle effects of redshift evolution and selection effects. 
+
+   
+
+  \item \textbf{Cross-covariance between methodologies and cosmological probes:}
+    Several methodologies are able to exploit a distorted 
+    density field and a peculiar velocity field 
+    (e.g.  \cite{ravouxGeneralizedFrameworkLikelihoodbased2025,qinRedshiftspaceMomentumPower2025}
+    ). 
+    Those are commonly applied to the same initial dataset, 
+    so results are correlated. 
+    Using large sets of mock catalogues, we will 
+    precisely estimate this cross-correlation, which is key to derive consensus results 
+    (e.g. \cite{sanchezClusteringGalaxiesCompleted2017,
+    bautistaCompletedSDSSIVExtended2021,
+    dumerchatBaryonAcousticOscillations2022}
+    ).
+    The same mocks could be further improved to evaluate the cross-covariance 
+    between growth measurements from peculiar velocities and weak lensing.
+\end{itemize}
+
+
+\subsubsection*{Work package 2: Systematic effects in real data}
+
+Focusing on real data, WP2 will investigate potential systematic effects 
+affecting growth measurements and will yield the final combined result from 
+DESI and ZTF. 
+
+\begin{itemize}
+  \item \textbf{Quantify the impact of observational systematics:}
+    With the mocks from WP1, 
+    we will quantify for the first time the impact 
+    of several observational systematics to an unprecedented level of accuracy.
+    Several systematic effects can create spurious correlations in the observed velocity field, 
+    potentially biasing our growth rate measurements \cite{rossCompletedSDSSIVExtended2020}. 
+    We will pay particular attention to 
+    the angular dependence of the Malmquist bias, dust attenuation, flux calibration residuals, 
+    among others. 
+    Strategies will be put in place to mitigate such impacts when possible, 
+    otherwise a systematic uncertainty budget will be propagated to final results.
+
+  \item \textbf{Growth rate measurement with a photometric sample of SNIa:}
+    Building up on our experience with synthetic datasets of Rubin LSST SNIa
+    \cite{rosselliForecastGrowthrateMeasurement2025a,carreresTypeIaSupernova2025}, 
+    we will extend this work to the final release of ZTF SNIa data. 
+    This photometrically-classified sample can potentially increase the 
+    number of SNIa by factors of 5 to 6 compared to the spectroscopically-classified sample,
+    also increasing the redshift range to $0< z< 0.2$.  
+
+  \item \textbf{Cross-calibration of DESI and ZTF peculiar velocities:}
+    Given the existence of three different distance indicators (TF, FP and SNIa) in the same 
+    volume, there are many opportunities for cross-calibrations and consistency checks between 
+    those, in regards to cosmological parameters. Cross-correlations between different surveys
+    are much less sensitive to systematic effects, so measuring them adds to the robustness of
+    our analysis. We aim at obtaining a final consensus growth rate measurement from this combination, 
+    including all contributions of potential systematic errors. 
+
+\end{itemize}
+
+%Measurement of fs8 with ZTF DR2.5 or DR3 or DR4
+
+%- study angular systematics introducing large-scale correlations (selection, dust, ubercal, other?) 
+%(si tu veux rentrer dans le détail, y a l'aspect classification photo qui va être intéressant, 
+%l'aspect analyse fs8 vs bulk flow, et vs anisotropies ptet aussi, et sinon tu peux mentionner les 
+%systé classiques dont on a parlé au workshop) 
+
+%- any astrophysical systematics ? continuation of Vincenzo's work 
+
+%\textbf{Measurement of fs8 with DESI PV final sample}
+%systematic tests of FP and TF samples 
+
+
+\subsubsection*{Work package 3: Cosmological implications of our measurements} 
+
+WP3 will derive cosmological constraints from results of WP1 and WP2. 
+Our growth rate measurement at low redshift,  
+when combined with high redshift expansion and growth rate measurements (Fig.~\ref{fig:fs8}),
+has the potential to improve constraints on dark energy and rule out some modified gravity theories.
+
+The expansion rate will be provided by 
+SNIa Hubble diagrams, baryon acoustic oscillations and the cosmic microwave background. 
+At high redshift, DESI and Euclid will also provide precise growth rates from RSD. 
+With those probes, WP3 will deliver constraints on:
+\begin{itemize}
+  \item $\Omega_m$, $\sigma_8$, $H_0$ when assuming a $\Lambda$CDM model 
+  \item $w_0$ and $w_a$ parameters describing the equation of state of evolving dark energy 
+  \item $\gamma$ or $(\mu_0, \Sigma_0)$ which empirically parametrise deviations from general relativity. 
+  In-house forecasts predict that the uncertainty on $\gamma$ reduces by a factor of $\sim 2$ 
+  when including our low-redshift growth rate measurement. 
+\end{itemize}
+Those results will set the tightest constraints from the Northen sky. 
+This work serve as basis for future analyses of datasets in the Southern sky such as 
+Rubin LSST and 4MOST. 
+
+
+
+%\subsection{Added-value}
+
+% in terms of scientific contribution, concerning the object, 
+% the research issue, the methodology ; added-value in terms of knowledge production
+
+%Whatever the type of project: project aiming at original, disruptive or exploratory 
+%objectives or concepts; projects aiming to remove scientific obstacles well known in 
+%the community; projects exploiting data generated by research infrastructures; projects 
+%resulting from previous projects and intended to consider new objectives. 
+%Specify, if necessary, the preliminary results obtained. 
+%Concerning a follow-up project, specify the results obtained through the previous 
+%project and position the new project in relation to the previous one regarding 
+%the “new objectives” pursued.
+
+%\subsection{Ability of the project to address the research issues covered by the chosen research theme}
+
+  
+ %cf. §F. Scientific themes covered by the Generic Call for Proposals 2026, in the 2026 AAPG call text
