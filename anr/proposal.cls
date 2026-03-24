@@ -221,6 +221,10 @@
 % font size of the bibliographical section text
 \renewcommand*{\bibfont}{\scriptsize}
 
+\usepackage{parskip}
+%\setlength{\parindent}{0pt}   % Removes paragraph indentation
+%\setlength{\parskip}{5pt} 
+
 % Get the reference numbered colored and with square bracket
 \DeclareFieldFormat{labelnumberwidth}{\textcolor{citecolor}{\mkbibbrackets{#1}}}
 
@@ -356,11 +360,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % work packages and tasks
 \newcounter{CntWP}					% WP counter
-\setcounter{CntWP}{-1}				% NOTE: comment this line to number WPs starting from 1
+%\setcounter{CntWP}{-1}				% NOTE: comment this line to number WPs starting from 1
 \newcounter{CntT}[CntWP]			% task counter
 \newcommand{\wpdef}[2]{				% defines new WPs
 	\refstepcounter{CntWP}\label{#1}
-    \par\vspace{0.5cm}
+    \par\vspace{0.25cm}
 	\phantomsection
 	\addcontentsline{toc}{subsubsection}{WP~\arabic{CntWP}.~#2}
     \noindent
@@ -370,8 +374,8 @@
     \par\vspace{0.25cm}
 	\phantomsection
 	\addcontentsline{toc}{paragraph}{Task~\arabic{CntWP}.\arabic{CntT}.~#2}
-    \noindent\hspace{0.5cm}
-    {\normalfont\normalsize\bfseries\itshape\textcolor{headcolor}{Task~\arabic{CntWP}.\arabic{CntT}:~#2}}\newline}
+    \noindent%\hspace{0.5cm}
+    {\normalfont\normalsize\bfseries\textcolor{headcolor}{Task~\arabic{CntWP}.\arabic{CntT}:~#2}}\newline}
 \renewcommand*\theCntT{\theCntWP.\arabic{CntT}}
 
 
