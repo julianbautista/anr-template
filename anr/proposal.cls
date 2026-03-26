@@ -368,14 +368,14 @@
 	\phantomsection
 	\addcontentsline{toc}{subsubsection}{WP~\arabic{CntWP}.~#2}
     \noindent
-    {\normalfont\normalsize\bfseries\textcolor{headcolor}{Work Package~\arabic{CntWP}:~#2}}\newline}
+    {\normalfont\normalsize\bfseries\textcolor{headcolor}{Work Package~\arabic{CntWP}:~#2}}\vspace{0.3cm}\newline}
 \newcommand{\tdef}[2]{				% defines new tasks
 	\refstepcounter{CntT}\label{#1}
     \par\vspace{0.25cm}
 	\phantomsection
 	\addcontentsline{toc}{paragraph}{Task~\arabic{CntWP}.\arabic{CntT}.~#2}
     \noindent%\hspace{0.5cm}
-    {\normalfont\normalsize\bfseries\textcolor{headcolor}{Task~\arabic{CntWP}.\arabic{CntT}:~#2}}\newline}
+    {\normalfont\normalsize\textcolor{headcolor}{Task~\arabic{CntWP}.\arabic{CntT}:~#2}}\vspace{0.3cm}\newline}
 \renewcommand*\theCntT{\theCntWP.\arabic{CntT}}
 
 
